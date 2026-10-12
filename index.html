@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karan Yadav | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="logo">Karan<span>.</span></a>
+    <nav id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button id="menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text fade">
+      <p class="hello">👋 Hello, I'm</p>
+      <h1>Karan Yadav</h1>
+      <h2>I'm a <span id="typing"></span><span class="cursor">|</span></h2>
+      <p class="intro">B.Tech CSE (Data Science) student learning web development, one project at a time.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-card fade">
+      <div class="avatar">KY</div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h3 class="title fade">About <span>Me</span></h3>
+    <div class="about-grid fade">
+      <p>
+        I'm a first-year B.Tech student in Computer Science &amp; Engineering (Data Science)
+        at Vishveshwarya Group of Institutions, Greater Noida. I enjoy learning how things
+        work on the web and building small projects to practice what I learn.
+      </p>
+      <div class="stats">
+        <div class="stat"><b data-count="4">0</b><small>Weeks of Learning</small></div>
+        <div class="stat"><b data-count="2">0</b><small>Projects Built</small></div>
+        <div class="stat"><b data-count="3">0</b><small>Languages Learned</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt">
+    <h3 class="title fade">My <span>Skills</span></h3>
+    <div class="skills fade">
+      <div class="skill"><div class="skill-top"><span>HTML</span><span>70%</span></div><div class="bar"><div class="fill" data-width="70"></div></div></div>
+      <div class="skill"><div class="skill-top"><span>CSS</span><span>60%</span></div><div class="bar"><div class="fill" data-width="60"></div></div></div>
+      <div class="skill"><div class="skill-top"><span>JavaScript</span><span>40%</span></div><div class="bar"><div class="fill" data-width="40"></div></div></div>
+      <div class="skill"><div class="skill-top"><span>Git &amp; GitHub</span><span>45%</span></div><div class="bar"><div class="fill" data-width="45"></div></div></div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h3 class="title fade">My <span>Projects</span></h3>
+    <div class="cards">
+      <article class="card fade">
+        <div class="card-icon">🔐</div>
+        <h4>Login Page</h4>
+        <p>A responsive login page built with HTML and CSS, with gradient background and smooth animations.</p>
+        <a href="https://uniquekaranji.github.io/login-page/" target="_blank" rel="noopener">View Live →</a>
+      </article>
+      <article class="card fade">
+        <div class="card-icon">💼</div>
+        <h4>Personal Portfolio</h4>
+        <p>This website, built with HTML, CSS and JavaScript, featuring a dark mode and animations.</p>
+        <a href="#home">You're here →</a>
+      </article>
+      <article class="card fade">
+        <div class="card-icon">🚀</div>
+        <h4>Coming Soon</h4>
+        <p>More projects are on the way as I keep learning and building.</p>
+        <a href="https://github.com/uniquekaranji" target="_blank" rel="noopener">See GitHub →</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <h3 class="title fade">Contact <span>Me</span></h3>
+    <form id="contact-form" class="form fade" novalidate>
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="email" id="email" placeholder="Your Email">
+      <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+      <p id="form-msg"></p>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Karan Yadav. Built with HTML, CSS &amp; JavaScript 💙</p>
+  </footer>
+
+  <button id="to-top" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
